@@ -1,0 +1,1296 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Libre+Baskerville&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+Display:wght@600&family=Noto+Serif:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
+        <title>CLASSY FURNITURE</title>
+        <style>
+          * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+          }
+          .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+          }
+          .navbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+          .navleft {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+          }
+          .navleft span {
+            color: rgb(92, 224, 218);
+          }
+          .navright {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+          .navright a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #000;
+          }
+          /* Navbar End */
+
+          /* Maindiv Start */
+
+          .maindiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            padding: 10px;
+          }
+          .mainleft {
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            width: 500px;
+            padding: 30px;
+          }
+          .mainleft h1 {
+            line-height: 4.5rem;
+            font-size: 3.3rem;
+            color: #666161;
+            margin-bottom: 30px;
+          }
+          .mainleft p {
+            width: 300px;
+            font-size: 1.5rem;
+            color: #776d6d;
+            margin-bottom: 30px;
+          }
+          .mainleft button {
+            width: 200px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(20, 109, 211);
+            padding: 5px 8px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+          }
+          .mainright {
+            padding: 30px 0px;        
+          }
+
+          /* Maindiv End */
+
+          /* Aside Div Start */
+          .asidediv {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: start;
+          }
+          .asidediv .asideinnerdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 1.3rem;
+          }
+
+          .asidediv .asideinnerdiv span {
+            margin-left: 10px;
+          }
+          /* Aside Div End */
+
+          /* Section Div Start */
+
+          .sectiondiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            margin: 20px 0px;
+          }
+          /* Section Left Div  */
+          .sectiondiv .sectionleft {
+            margin: 50px;
+          }
+
+          /* Section Right Div  */
+          .sectiondiv .sectionright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+          }
+          .sectiondiv .sectionright h2 {
+            color: #666161;
+            margin-bottom: 10px;
+          }
+          .sectiondiv .sectionright p {
+            font-weight: bold;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .sectiondiv .sectionright button {
+            width: 200px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(20, 109, 211);
+            padding: 12px 8px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+          }
+          .sectiondiv .sectionright img {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 250px;
+            width: 250px;
+          }
+          /* Section  Div End */
+
+          /* Article Div Start */
+          .articlediv {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            text-align: center;
+          }
+          .articlediv h1 {
+            font-size: 2.1rem;
+            color: #666161;
+          }
+          .articlediv p {
+            font-weight: bold;
+            font-size: 0.9rem;
+          }
+          .articlediv .bottomdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+          }
+          .articlediv .bottomdiv .innerbottomdiv p {
+            width: 250px;
+            font-weight: 100;
+            margin: 10px 10px;
+          }
+          /* Article Div End */
+
+          /* Section Image Start */
+          .imagesection {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          .imagesection img {
+            height: 200px;
+            width: 150px;
+            margin: 5px 20px;
+          }
+          /* Section Image End */
+
+          /* Section Div 2 Start */
+
+          .sectiondiv2 {
+            text-align: center;
+            width: 100%;
+          }
+          .sectiondiv2 h1 {
+            font-size: 2rem;
+          }
+          .sectiondiv2 p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px;
+          }
+          .sectiondiv2 .sectiondiv2innerdiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+          .sectiondiv2innerdiv .cards {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+            border-radius: 20px;
+            margin: 20px;
+          }
+          .sectiondiv2innerdiv .cards:hover {
+            background-color: rgb(30, 30, 238);
+            color: #fff;
+          }
+          .sectiondiv2innerdiv .cards h2 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+          }
+          .sectiondiv2innerdiv .cards p {
+            font-weight: 100;
+            font-size: 1rem;
+            margin: 10px 0px;
+          }
+          .sectiondiv2innerdiv .cards .color {
+            color: #f00;
+            font-size: 0.9rem;
+            margin: 10px;
+          }
+          .innercards img {
+            margin-top: 20px;
+            height: 150px;
+            width: 280px;
+          }
+          .cards .innercards2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+          }
+          .cards .innercards2 span {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-right: 5px;
+            color: #666161;
+          }
+          .cards .innercards2 .addtocart {
+            width: 150px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(20, 109, 211);
+            padding: 12px 10px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+          }
+          .cards .innercards2 .addtocart:hover{
+            background-color: #fff;
+            color: rgb(20, 109, 211);
+          }
+          .end button{
+            width: 400px;
+            padding: 14px 20px;
+            margin: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(20, 109, 211);
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+          }
+          /* Section Div 2 End */
+
+          /* Footer Div Start */
+
+          .footerdiv{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 100px;
+            background: linear-gradient(rgb(228, 102, 228),rgb(11, 93, 201));
+            position: relative;
+          }
+          .footerdiv .footerupperdiv{
+            position: absolute;
+            top: -70px;
+            left: 15%;
+            display: flex;
+            width: 70%;
+            flex-direction: row;
+            border: 1px solid black;
+            background-color: #fff;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+          }
+          .footerdiv .leftfooterupperdiv h2{
+            color: #666161;
+            margin: 10px 0px;
+            margin-left: 15px;
+            text-align: center;
+            font-size: 1.6rem;
+          }
+          .footerdiv .leftfooterupperdiv p{
+            margin: 10px 0px;
+            margin-left: 15px;
+            font-size: 1.1rem;
+          }
+          .footerdiv .leftfooterupperdiv input{
+            margin: 10px 5px;
+            padding: 10px 80px;
+            font-size: 1rem;
+            color: #000;
+            border: none;
+            border-radius: 20px;
+            margin-left: 80px;
+            background-color: rgb(247, 247, 194);             
+          }
+          .footerdiv .leftfooterupperdiv span button{
+            margin: 10px 0px;
+            padding: 12px 50px;
+            margin: 10px 0px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(20, 109, 211);
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+          }
+          .rightfooterupperdiv img{
+            height: 150px;
+            width: 150px;
+            margin-left: 50px;
+          }
+
+          .footerbottomdiv{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            margin: 150px 10px 80px 10px;
+            text-align: center;
+          }
+          .innerfooterbottomdiv p:first-child{
+              font-size: 3rem;
+          }
+          .innerfooterbottomdiv h1 span,p span{
+            color: rgb(18, 205, 218);
+          }
+          .innerfooterbottomdiv h4{
+            color: #fff;
+          }
+          .white p{
+            font-weight: bold;
+            line-height: 2rem;
+            font-size: 0.8rem;
+          }
+          .innerfooterbottomdiv span .socialmedia{
+            margin-top: 10px;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+          }
+          /* Footer Div End */
+
+
+
+
+          /* Media Querie Start */
+          @media only screen and  (max-width:320px){
+            *{
+              padding: 0px;
+              margin: 0px;
+              box-sizing: border-box;
+            }
+            body {
+              overflow-x: hidden;
+          }     
+            .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+          }
+          /* Navbar Start */
+            .navbar {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%; 
+          }
+          .navleft {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+          }
+          .navright {
+            width: 95%;
+          }
+          .navright a{
+            font-size: 0.6rem;
+          }
+          .navright a img{
+            height: 10px;
+            width: 10px;
+          }
+          /* Navbar End */
+
+          /* MainDiv Start */
+          .maindiv {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+          .mainleft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+          }
+          .mainleft h1 {
+            line-height: 2rem;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .mainleft p {
+            width: 90%;
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+          .mainleft button {
+            width: 90px;
+            padding: 10px 8px;
+            font-size: 0.6rem;
+          }
+          .mainright {
+            display: none;      
+          }
+          /* MainDiv End*/
+
+      /* Aside Div Start */
+          .asidediv .asideinnerdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 1rem;
+          }
+          .asidediv img{
+            height: 20px;
+            width: 20px;
+          }
+          .asideinnerdiv span{
+            font-size: 0.8rem;
+          }
+          /* Aside Div End */
+
+    /* Section Div Start */
+
+          .sectiondiv {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+          /* Section Left Div  */
+          .sectiondiv .sectionleft img{
+            height: 120px;
+            width: 100px;
+          }
+          /* Section Right Div  */
+          .sectiondiv .sectionright{
+            width: 100%;
+            padding-left: 20px;
+          }
+          .sectiondiv .sectionright p {
+            font-size: 0.6rem;
+            font-weight: 100;
+            width: 90%;
+            line-height: 1.2rem;
+          }
+          .sectiondiv .sectionright button {
+            width: 100px;
+            padding: 10px 8px;
+            font-size:0.6rem;
+            border-radius: 25px;
+            border: none;
+          }
+          .sectiondiv .sectionright img {
+            height: 80px;
+            width: 80px;
+          }
+          /* Section  Div End */
+
+
+          /* Article Div Start */
+          .articlediv {
+            display: grid;
+            grid-template-rows: 1fr;
+          }
+          .articlediv h1 {
+            font-size: 1.4rem;
+          }
+          .articlediv p {
+            font-size: 0.7rem;
+          }
+          .articlediv .bottomdiv {
+            display: flex;
+            flex-direction: column;
+          }
+          .articlediv .bottomdiv .innerbottomdiv p{
+            width: 150px;
+            font-weight: 100;
+          }
+          /* Article Div End */
+
+          /* Section Image Start */
+          .imagesection {
+            flex-direction: row;
+            justify-content: center;
+          }
+          .imagesection img {
+            height: 200px;
+            width: 150px;
+          }
+          /* Section Image End */
+
+          /* Section Div 2 Start */
+          .sectiondiv2 h1 {
+            font-size: 1.4rem;
+          }
+          .sectiondiv2 p {
+            font-size: 0.7rem;
+          }
+          .sectiondiv2 .sectiondiv2innerdiv {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+          .sectiondiv2innerdiv .cards h2 {
+            font-size: 1rem;
+          }
+          .sectiondiv2innerdiv .cards p {
+            font-weight: 100;
+            font-size: 0.7rem;
+          }
+          .sectiondiv2innerdiv .cards .color {
+            font-size: 0.8rem;
+          }
+          .innercards img {
+            height: 100px;
+            width: 170px;
+          }
+          .cards .innercards2 span {
+            font-size: 0.8rem;
+          }
+          .cards .innercards2 .addtocart {
+            width: 80px;
+            padding: 10px 10px;
+            font-size: 0.6rem;
+          }
+          .end button{
+            width: 140px;
+            padding: 10px 15px;
+            font-size: 0.6rem;
+          }
+          /* Section Div 2 End */
+
+          /* Footer Div Start */
+
+          .footerdiv{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 260px;
+            background: linear-gradient(rgb(228, 102, 228),rgb(11, 93, 201));
+            position: relative;
+            width: 100%;
+            }
+          .footerdiv .footerupperdiv{
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            border: none;
+          }
+          .footerdiv .leftfooterupperdiv h2{
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.3rem;
+          }
+          .footerdiv .leftfooterupperdiv p{
+            margin: 10px 0px;
+            margin-left: 15px;
+            font-size: 0.8rem;
+            text-align: center;
+          }
+          .footerdiv .leftfooterupperdiv input{
+            font-size: 0.5rem;  
+            width: 120px; 
+            padding: 10px 12px;
+            margin-left: 45px;
+
+          }
+          .footerdiv .leftfooterupperdiv span button{
+            padding: 10px 10px;
+            font-size: 0.6rem;
+            width: 90px;
+          }
+          .rightfooterupperdiv img{
+          display: none;
+          }
+
+          .footerbottomdiv{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 10px 20px 50px;
+          }
+          .footerbottomdiv h1{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .footerbottomdiv p{
+            font-size: 0.7rem;
+            margin-bottom: 8px;
+          }
+          .white p{
+            font-weight: bold;
+            line-height: 1rem;
+            font-size: 0.7rem;
+          }
+          .innerfooterbottomdiv h4{
+            margin-bottom: 5px;
+          }
+          .innerfooterbottomdiv span .socialmedia{
+            height: 18px;
+            width: 18px;
+          }
+          /* Footer Div End */
+
+          }
+
+
+          /* Media Querie Start */
+          @media only screen and  (min-width:321px) and (max-width:425px){
+            *{
+              padding: 0px;
+              margin: 0px;
+              box-sizing: border-box;
+            }
+            body {
+              overflow-x: hidden;
+          }     
+            .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+          }
+          /* Navbar Start */
+            .navbar {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%; 
+          }
+          .navleft {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+          }
+          .navright {
+            width: 95%;
+          }
+          .navright a{
+            font-size: 0.6rem;
+          }
+          .navright a img{
+            height: 10px;
+            width: 10px;
+          }
+          /* Navbar End */
+
+          /* MainDiv Start */
+          .maindiv {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+          .mainleft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+          }
+          .mainleft h1 {
+            line-height: 2rem;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .mainleft p {
+            width: 90%;
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+          .mainleft button {
+            width: 90px;
+            padding: 10px 8px;
+            font-size: 0.6rem;
+          }
+          .mainright {
+            display: none;      
+          }
+          /* MainDiv End*/
+
+      /* Aside Div Start */
+          .asidediv .asideinnerdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 1rem;
+          }
+          .asidediv img{
+            height: 20px;
+            width: 20px;
+          }
+          .asideinnerdiv span{
+            font-size: 0.8rem;
+          }
+          /* Aside Div End */
+
+    /* Section Div Start */
+
+          .sectiondiv {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+          /* Section Left Div  */
+          .sectiondiv .sectionleft img{
+            height: 120px;
+            width: 100px;
+          }
+          /* Section Right Div  */
+          .sectiondiv .sectionright{
+            width: 100%;
+            padding-left: 20px;
+          }
+          .sectiondiv .sectionright p {
+            font-size: 0.6rem;
+            font-weight: 100;
+            width: 90%;
+            line-height: 1.2rem;
+          }
+          .sectiondiv .sectionright button {
+            width: 100px;
+            padding: 10px 8px;
+            font-size:0.6rem;
+            border-radius: 25px;
+            border: none;
+          }
+          .sectiondiv .sectionright img {
+            height: 80px;
+            width: 80px;
+          }
+          /* Section  Div End */
+
+
+          /* Article Div Start */
+          .articlediv {
+            display: grid;
+            grid-template-rows: 1fr;
+          }
+          .articlediv h1 {
+            font-size: 1.4rem;
+          }
+          .articlediv p {
+            font-size: 0.7rem;
+          }
+          .articlediv .bottomdiv {
+            display: flex;
+            flex-direction: column;
+          }
+          .articlediv .bottomdiv .innerbottomdiv p{
+            width: 150px;
+            font-weight: 100;
+          }
+          /* Article Div End */
+
+          /* Section Image Start */
+          .imagesection {
+            flex-direction: row;
+            justify-content: center;
+          }
+          .imagesection img {
+            height: 200px;
+            width: 150px;
+          }
+          /* Section Image End */
+
+          /* Section Div 2 Start */
+          .sectiondiv2 h1 {
+            font-size: 1.4rem;
+          }
+          .sectiondiv2 p {
+            font-size: 0.7rem;
+          }
+          .sectiondiv2 .sectiondiv2innerdiv {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+          .sectiondiv2innerdiv .cards h2 {
+            font-size: 1rem;
+          }
+          .sectiondiv2innerdiv .cards p {
+            font-weight: 100;
+            font-size: 0.7rem;
+          }
+          .sectiondiv2innerdiv .cards .color {
+            font-size: 0.8rem;
+          }
+          .innercards img {
+            height: 100px;
+            width: 170px;
+          }
+          .cards .innercards2 span {
+            font-size: 0.8rem;
+          }
+          .cards .innercards2 .addtocart {
+            width: 80px;
+            padding: 10px 10px;
+            font-size: 0.6rem;
+          }
+          .end button{
+            width: 140px;
+            padding: 10px 15px;
+            font-size: 0.6rem;
+          }
+          /* Section Div 2 End */
+
+          /* Footer Div Start */
+
+          .footerdiv{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 260px;
+            background: linear-gradient(rgb(228, 102, 228),rgb(11, 93, 201));
+            position: relative;
+            width: 100%;
+            }
+          .footerdiv .footerupperdiv{
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            border: none;
+          }
+          .footerdiv .leftfooterupperdiv h2{
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.3rem;
+          }
+          .footerdiv .leftfooterupperdiv p{
+            margin: 10px 0px;
+            margin-left: 15px;
+            font-size: 0.8rem;
+            text-align: center;
+          }
+          .footerdiv .leftfooterupperdiv input{
+            font-size: 0.5rem;  
+            width: 120px; 
+            padding: 10px 12px;
+            margin-left: 45px;
+
+          }
+          .footerdiv .leftfooterupperdiv span button{
+            padding: 10px 10px;
+            font-size: 0.6rem;
+            width: 90px;
+          }
+          .rightfooterupperdiv img{
+          display: none;
+          }
+
+          .footerbottomdiv{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 10px 20px 85px;
+          }
+          .footerbottomdiv h1{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .footerbottomdiv p{
+            font-size: 0.7rem;
+            margin-bottom: 8px;
+          }
+          .white p{
+            font-weight: bold;
+            line-height: 1rem;
+            font-size: 0.7rem;
+          }
+          .innerfooterbottomdiv h4{
+            margin-bottom: 5px;
+          }
+          .innerfooterbottomdiv span .socialmedia{
+            height: 18px;
+            width: 18px;
+          }
+          /* Footer Div End */
+
+          }
+
+
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <!-- Navbar Start -->
+          <nav class="navbar">
+            <!-- Navbar Left -->
+            <div class="navleft">CLA<span>$$</span>Y FURNITURE</div>
+
+            <!-- Navbar Right -->
+            <div class="navright">
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/color/48/phone.png"
+                  alt="phone"
+                />
+                +919988776655
+              </a>
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/color/48/home--v1.png"
+                  alt="home--v1"
+                />
+                HOME
+              </a>
+
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/color/48/about.png"
+                  alt="about"
+                />
+                ABOUT US
+              </a>
+
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/fluency/48/menu--v1.png"
+                  alt="menu--v1"
+                />
+                MENU
+              </a>
+            </div>
+          </nav>
+          <!-- Navbar End -->
+
+          <!-- MainDiv Start -->
+          <main class="maindiv">
+            <!-- Main Left -->
+            <div class="mainleft">
+              <h1>Get Delivered your Product Easily</h1>
+              <p>We deliver 100% Classy Product. You can order right now !</p>
+              <button>EXPLORE</button>
+            </div>
+
+            <!-- Main Right -->
+            <div class="mainright">
+              <img src="Longchair.png" alt="" />
+            </div>
+          </main>
+          <!-- MainDiv End -->
+
+          <!-- Aside Start -->
+          <aside class="asidediv">
+            <!-- Aside Inner Div 1 -->
+            <div class="asideinnerdiv">
+              <img
+                width="45"
+                height="45"
+                src="https://img.icons8.com/ios/50/shopping-bag--v1.png"
+                alt="shopping-bag--v1"
+              />
+              <span>Select your Favorite Product and Order</span>
+            </div>
+
+            <!-- Aside Inner Div 2 -->
+            <div class="asideinnerdiv">
+              <img
+                width="45"
+                height="45"
+                src="https://img.icons8.com/color/48/marker--v1.png"
+                alt="marker--v1"
+              />
+              <span>Select your receiving place</span>
+            </div>
+
+            <!-- Aside Inner Div 3 -->
+            <div class="asideinnerdiv">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/external-goofy-color-kerismaker/96/external-Fast-Delivery-logistic-goofy-color-kerismaker.png"
+                alt="external-Fast-Delivery-logistic-goofy-color-kerismaker"
+              />
+              <span>Get Your Order In-Time</span>
+            </div>
+          </aside>
+          <!-- Aside End -->
+
+          <!-- Section Start -->
+
+          <section class="sectiondiv">
+            <!-- Section Left Start -->
+            <div class="sectionleft">
+              <img src="sofachair1.png" alt="" />
+            </div>
+
+            <!-- Section Right Start -->
+            <div class="sectionright">
+              <h4>About Us</h4>
+              <h2>We are the Best Quality Providers</h2>
+              <p>
+                A sofa set is a living room essential that cannot be compromised on.
+                When choosing a sofa set for your living room, you need to consider
+                a lot of different things including the space available, the
+                location of the sofa set, your existing design aesthetic, and more.
+                CLA$$Y FURNITURE offers solutions for each of these considerations. If
+                you're planning to set up your seating area in the corner of your
+                living room, our L-shaped sofa set is the ideal choice. The best
+                part about shopping for sofa sets from CLA$$Y FURNITURE? Our prices. If
+                you're worried about overspending on your furniture purchase, don't
+                be. Our sofa set prices are quite reasonable and for the quality on
+                offer, frankly a great deal. Our wide variety of sofa designs ensure
+                you don't settle for something that doesn't fit your space. Choose a
+                sofa set that complements your living room decor and create a
+                visually cohesive space.
+              </p>
+
+              <button>LEARN MORE</button>
+
+              <img src="sofachair3.png" alt="Sofa Chair 1" />
+            </div>
+          </section>
+          <!-- Section End -->
+
+          <!-- Article Div Start -->
+          <article class="articlediv">
+            <h1>WHY CHOOSE US?</h1>
+            <p>Over the 2 Million People are Happy with Us</p>
+            <!-- Bottom Div -->
+            <div class="bottomdiv">
+              <!-- Inner Bottom Div -->
+              <div class="innerbottomdiv">
+                <img src="icons8-sofa-32.png" alt="Sofa Icon" />
+                <h3>Amazing Sets</h3>
+                <p>We Deliver the Best and Classy Quality of Products</p>
+              </div>
+
+              <!-- Inner Bottom Div -->
+              <div class="innerbottomdiv">
+                <img src="icons8-discount-32.png" alt="Sofa Icon" />
+                <h3>Best Offer</h3>
+                <p>We give the Best Offer for out valuable costumers</p>
+              </div>
+
+              <!-- Inner Bottom Div -->
+              <div class="innerbottomdiv">
+                <img src="icons8-camper-32.png" alt="Sofa Icon" />
+                <h3>Fast Delivery</h3>
+                <p>
+                  We have the Fastest delivery Means to deliver as soon as Possible
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- Article Div Start -->
+
+          <!-- Secton Image Start -->
+          <section class="imagesection">
+            <img src="sofachair4.png" alt="" />
+          </section>
+          <!-- Section Image End -->
+
+
+          <!-- Section Div 2 Start -->
+          <section class="sectiondiv2">
+            <h1>Menu</h1>
+            <p>Explore Our Quality and Featured Products</p>
+
+            <!-- Section Div 2 Inner Div -->
+            <div class="sectiondiv2innerdiv">
+
+              <!-- Cards Start -->
+              <div class="cards">
+                <!-- Inner Cards Start -->
+                <div class="innercards">
+                  <img src="sofachairlong.png" alt="Sofa 2" />
+                  <h2>Classy Sofa</h2>
+                  <p>With Good Looking Design</p>
+                  <p class="color">In Stock</p>
+                </div>
+                <!-- Inner Cards End-->
+
+                <div class="innercards2">
+                  <span>$149.99</span>
+                  <button class="addtocart">ADD TO CART</button>
+                </div>
+              </div>
+              <!-- Cards End -->
+
+
+              <!-- Cards Start -->
+              <div class="cards">
+                <!-- Inner Cards Start -->
+                <div class="innercards">
+                  <img class="sofa" src="Sofa.png" alt="Sofa 2" />
+                  <h2>Royal Set</h2>
+                  <p>Suits a Royal Hall</p>
+                  <p class="color">In Stock</p>
+                </div>
+                <!-- Inner Cards End-->
+
+                <div class="innercards2">
+                  <span>$299.99</span>
+                  <button class="addtocart">ADD TO CART</button>
+                </div>
+              </div>
+              <!-- Cards End -->
+
+              <!-- Cards Start -->
+              <div class="cards">
+                <!-- Inner Cards Start -->
+                <div class="innercards">
+                  <img class="sofa" src="Lsofa.png" alt="Sofa 2" />
+                  <h2>Designer Sofa</h2>
+                  <p>Exclusive Rare designer piece</p>
+                  <p class="color">In Stock</p>
+                </div>
+                <!-- Inner Cards End-->
+
+                <div class="innercards2">
+                  <span>$249.99</span>
+                  <button class="addtocart">ADD TO CART</button>
+                </div>
+              </div>
+              <!-- Cards End -->
+
+
+            <!-- Cards Start -->
+                <div class="cards">
+                <!-- Inner Cards Start -->
+                    <div class="innercards">
+                        <img class="sofa" src="Sofa2.png" alt="Sofa 2" />
+                            <h2>Matted Sofa</h2>
+                            <p>Tressured with amazing Finish</p>
+                            <p class="color">In Stock</p>
+                </div>
+                <!-- Inner Cards End-->
+                
+                    <div class="innercards2">
+                        <span>$399.99</span>
+                        <button class="addtocart">ADD TO CART</button>
+                    </div>
+                </div>
+                <!-- Cards End -->
+
+            </div>
+            <!-- Section Div 2 Inner Div End -->
+            <div class="end">
+              <button>SEE ALL PRODUCTS</button>
+            </div>
+          </section>
+          <!-- Section Div 2 End -->
+
+
+          <!-- Footer Div Start -->
+          <footer class="footerdiv">
+
+            <!-- Footer Upper Div Start  -->
+            <div class="footerupperdiv">
+              <div class="leftfooterupperdiv">
+              <h2>Get Our Special Offer</h2>
+                <p>Input email address and compleate your subscription to avail our special offer</p>
+                <input type="text" placeholder="Enter Email Address"><span><button>SUBSCRIBE</button></span>
+              </div>
+              <div class="rightfooterupperdiv">
+                <img src="Pollow.png" alt="Pollow Image">
+              </div>
+            </div>
+            <!-- Footer Upper Div End -->
+
+            <!-- Footer Bottom Div Start -->
+              <div class="footerbottomdiv">
+                <div class="innerfooterbottomdiv">
+                  <h1>CLA<span>$$</span>Y FURNITURE</h1>
+                  <P>2022 &copy; All Rights Reserved By <span>Classy Furniture</span></P>
+                </div>
+
+                <div class="innerfooterbottomdiv white">
+                  <h4>Core Links</h4>
+                  <P>Home</P>
+                  <P>About Us</P>
+                  <P>Menu</P>
+                  <P>Contact Us</P>
+                </div>
+
+                <div class="innerfooterbottomdiv white">
+                  <h4>Support</h4>
+                  <P>FAQ</P>
+                  <P>Terms & Conditions</P>
+                  <P>Customer Support</P>
+                  <P>Online Support</P>
+                </div>
+
+                <div class="innerfooterbottomdiv white">
+                  <h4>Contact</h4>
+                  <p>(+91)9988776655</p>
+                  <p>classyfurniture@gmail.com</p>
+                  <p>Nalgonda, 508001</p>
+                  <p>Telangana India</p>
+                </div>
+
+                <div class="innerfooterbottomdiv white">
+                  <h4>Follow Us On</h4>
+                  <span><img class="socialmedia" src="facebook.png" alt="Facebook"></span>
+                  <span><img class="socialmedia" src="instagram.png" alt="Instagram"></span>
+                  <span><img class="socialmedia" src="twitter.png" alt="Twitter"></span>
+                  <span><img class="socialmedia" src="telegram.png" alt="Telegram"></span>
+                </div>
+
+              </div>
+          </footer>
+          <!-- Footer Div End -->
+
+
+        </div>
+      </body>
+    </html>
